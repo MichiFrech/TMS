@@ -1,0 +1,35 @@
+﻿<Controls:MetroWindow x:Class="TMS.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:TMS"
+        mc:Ignorable="d"
+        Title="Task Management Software" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="0.5" Height="168" Width="484" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="_images/projects-folder.ico">
+    <Grid>
+        <TextBox x:Name="tb_mail" VerticalContentAlignment="Center" Height="29" FontSize="15" Margin="123,15,0,0" VerticalAlignment="Top" LostFocus="tb_mail_LostFocus" KeyDown="tb_mail_KeyDown" HorizontalAlignment="Left" Width="310"/>
+        <Label x:Name="lbl_mail" FontSize="15" Content="Email:" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="23,12,0,0" VerticalAlignment="Top" Height="46" Width="100"/>
+
+        <PasswordBox x:Name="tb_pw" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="29" FontSize="15" Margin="123,59,0,0" VerticalAlignment="Top" Width="310" LostFocus="tb_pw_LostFocus" KeyDown="tb_pw_KeyDown"/>
+        <Label x:Name="lbl_mail_Copy" FontSize="15" Content="Passwort:" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="23,56,0,0" VerticalAlignment="Top" Height="46" Width="100"/>
+
+        <Button x:Name="btn_login" Content="Login" Focusable="False" Style="{DynamicResource SquareButtonStyle}" HorizontalAlignment="Left" Margin="335,98,0,0" VerticalAlignment="Top" Width="98" Height="30" Click="btn_login_Click" BorderThickness="1"/>
+
+        <iconPacks:PackIconMaterial Kind="None" x:Name="mail_state_icon" Margin="0,14,12,0" Height="29" Width="29"  HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <iconPacks:PackIconMaterial Kind="None" x:Name="password_state_icon" Margin="0,58,12,0" Height="29" Width="29"  HorizontalAlignment="Right" VerticalAlignment="Top"/>
+
+        <Label x:Name="lbl_msg" HorizontalAlignment="Left" Margin="18,102,0,0" VerticalAlignment="Top" Width="317" Height="27" FontWeight="Bold" Visibility="Hidden"/>
+    </Grid>
+    
+    <Controls:MetroWindow.LeftWindowCommands>
+        <Controls:WindowCommands>
+            <Button x:Name="GoBackBtn" Focusable="False" Click="GoBackBtn_Click" >
+                <iconPacks:PackIconMaterial Kind="ArrowLeftBoldHexagonOutline"/>
+            </Button>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.LeftWindowCommands>
+</Controls:MetroWindow>
+
+    

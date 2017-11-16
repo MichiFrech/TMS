@@ -1,0 +1,23 @@
+﻿<Controls:MetroWindow x:Class="TMS.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:TMS"
+        mc:Ignorable="d"
+        Title="Task Management Software" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="0.5" Height="311.833" Width="602.088" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" ShowInTaskbar="False">
+
+    <Grid>
+        <TextBlock x:Name="textBox" HorizontalAlignment="Left" Height="282" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="595" Margin="0,0,0,-0.4"/>
+    </Grid>
+
+    <Controls:MetroWindow.LeftWindowCommands>
+        <Controls:WindowCommands>
+            <Button x:Name="GoBackBtn" Click="GoBackBtn_Click">
+                <iconPacks:PackIconMaterial Kind="ArrowLeftBoldHexagonOutline" />
+            </Button>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.LeftWindowCommands>
+</Controls:MetroWindow>
