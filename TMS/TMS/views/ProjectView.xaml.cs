@@ -121,7 +121,7 @@ namespace TMS.views
             Flyout flyout = (Flyout)obj;
             object lbl = parentWindow.FindName("lbl_proj");
             Label projlbl = (Label)lbl;
-            projlbl.Content = "History " + this.dropdown_allprojects.SelectedItem.ToString();
+            projlbl.Content = "History of " + this.dropdown_allprojects.SelectedItem.ToString();
             flyout.IsOpen = !flyout.IsOpen;
         }
     }
