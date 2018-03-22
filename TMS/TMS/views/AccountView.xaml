@@ -1,0 +1,109 @@
+﻿<UserControl x:Class="TMS.views.AccountView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:local="clr-namespace:TMS.views"
+             xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="1050.2" d:DesignWidth="2158.6">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.Resources>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/FlatButton.xaml" />
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="520"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Settings Column -->
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70" />
+                    <RowDefinition Height="70" />
+                    <RowDefinition Height="70" />
+                    <RowDefinition Height="70" />
+                    <RowDefinition Height="70" />
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="70" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="330" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="66" />
+                </Grid.ColumnDefinitions>
+
+                <Label Content="Firstname:" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="28" Margin="20,0,0,0" />
+                <TextBox x:Name="tb_firstname" Grid.Column="1" Grid.Row="0" Height="33" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="16" Text="Max" Margin="20,0,0,0" />
+                <iconPacks:PackIconMaterial Kind="CheckCircleOutline" x:Name="check_firstname" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="0" Height="33" Width="33" Margin="0,0,0,0" />
+                <!-- CloseCircleOutline -->
+
+                <Label Content="Lastname:" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="28" Margin="20,0,0,0" />
+                <TextBox x:Name="tb_lastname" Grid.Column="1" Grid.Row="1" Height="33" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="16" Text="Mustermann" Margin="20,0,0,0" />
+                <iconPacks:PackIconMaterial Kind="CheckCircleOutline" x:Name="check_lastname" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="1" Height="33" Width="33" Margin="0,0,0,0" />
+                <!-- CloseCircleOutline -->
+
+                <Label Content="Email:" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="28" Margin="20,0,0,0" />
+                <TextBox x:Name="tb_mail" Grid.Column="1" Grid.Row="2" Height="33" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="16" Text="max@mustermann.com" Margin="20,0,0,0" />
+                <iconPacks:PackIconMaterial Kind="CheckCircleOutline" x:Name="check_mail" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="2" Height="33" Width="33" Margin="0,0,0,0" />
+                <!-- CloseCircleOutline -->
+
+                <Label Content="Password:" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="28" Margin="20,0,0,0" />
+                <PasswordBox x:Name="tb_password" Grid.Column="1" Grid.Row="3" Height="33" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="16" Password="maxmustermann1234" Margin="20,0,0,0" />
+                <iconPacks:PackIconMaterial Kind="CheckCircleOutline" x:Name="check_password" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="3" Height="33" Width="33" Margin="0,0,0,0" />
+                <!-- CloseCircleOutline -->
+
+                <Label Content="Confirm Password:" Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="28" Margin="20,0,0,0" />
+                <PasswordBox x:Name="tb_confpassword" Grid.Column="1" Grid.Row="4" Height="33" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="16" Password="maxmustermann1234" Margin="20,0,0,0" />
+                <iconPacks:PackIconMaterial Kind="CheckCircleOutline" x:Name="check_confpassword" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="4" Height="33" Width="33" Margin="0,0,0,0" />
+                <!-- CloseCircleOutline -->
+
+                <Label Content="Description:" Grid.Column="0" Grid.Row="5" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="28" Margin="20,8,0,0" />
+                <RichTextBox x:Name="tb_desc" Grid.Column="1" Grid.Row="5" Height="160" VerticalScrollBarVisibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="16" Margin="20,0,0,0" Block.LineHeight="18" />
+
+                <Label Content="Business usage:" Grid.Column="0" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="28" Margin="20,0,0,0" />
+                <Grid Grid.Column="1" Grid.Row="6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    
+                    <Button x:Name="btn_upgrade" Grid.Column="0" HorizontalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Stretch" MaxWidth="255" FontSize="16" Content="UPGRADE" Margin="20,0,0,-10.8" Height="40" />
+                </Grid>
+                
+            </Grid>
+
+            <Button x:Name="btn_save" Content="SAVE CHANGES" VerticalAlignment="Top" HorizontalAlignment="Right" Height="45" Width="130" Margin="0,720,30,25" Grid.Column="0"/>
+
+            <!-- Account Column -->
+            <Rectangle Fill="#FF484848" Grid.Column="1"/>
+
+            <iconPacks:PackIconMaterial Kind="AccountCircle" Grid.Column="1" Width="240" Foreground="White" Height="240" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,30,0,0" />
+            <Label x:Name="lbl_name" Content="Max Mustermann" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="50" Foreground="Black" Grid.Column="1" Margin="0,300,0,0" />
+
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Content="Email:" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="25" Foreground="Black" Margin="20,400,0,0" />
+                <Label x:Name="lbl_mail" Grid.Column="1" Content="max@mustermann.com" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="25" Foreground="Black" Margin="40,400,0,0" />
+
+                <Label Grid.Column="0" Content="License:" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="25" Foreground="Black" Margin="20,470,0,0" />
+                <Label x:Name="lbl_license" Grid.Column="1" Content="Free License" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="25" Foreground="Black" Margin="40,470,0,0" />
+
+                <Label Grid.Column="0" Content="Valid till:" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="25" Foreground="Black" Margin="20,540,0,0" />
+                <Label x:Name="lbl_lastpayment" Grid.Column="1" Content="Lifetime" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="25" Foreground="Black" Margin="40,540,0,0" />
+
+                <Label Grid.Column="0" Content="Theme:" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="25" Foreground="Black" Margin="20,610,0,25" />
+                <Controls:ToggleSwitch x:Name="currentTheme" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" OffLabel="BaseLight" FontSize="25" OnLabel="BaseDark" Foreground="Black" Click="currentTheme_Click" Margin="40,614,0,28" />
+
+            </Grid>
+
+        </Grid>
+
+    </ScrollViewer>
+</UserControl>

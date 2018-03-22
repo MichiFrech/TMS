@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:TMS.Resources"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <!--#region Login/Register-->
+    <system:String x:Key="welcomeTxt">Willkommen zur Task Management Software...</system:String>
+    <system:String x:Key="register">REGISTRIEREN</system:String>
+    <system:String x:Key="login">ANMELDEN</system:String>
+    <system:String x:Key="password">Passwort:</system:String>
+    <system:String x:Key="msg_err">"Es ist ein Fehler aufgetreten!"</system:String>
+    <system:String x:Key="msg_succ">Erfolgreich registriert!</system:String>
+    <system:String x:Key="psw_tooltip">Mindestens ein Großbuchstabe • Mindestens ein Kleinbuchstabe • Mindestens eine Ziffer • Mindestlänge 8</system:String>
+    <system:String x:Key="mail_tooltip">Die Email-Adresse muss im Format name@mail.com sein</system:String>
+    <system:String x:Key="mail">Email:</system:String>
+    <system:String x:Key="firstname">Vorname:</system:String>
+    <system:String x:Key="lastname">Nachname:</system:String>
+    <system:String x:Key="usage">Verwendung:</system:String>
+    <system:String x:Key="usage_private">Private Verwendung [Kostenlos]</system:String>
+    <system:String x:Key="usage_business">Geschäftliche Verwendung [50$ pro Jahr]</system:String>
+    <system:String x:Key="name_tooltip">Es sind nur Buchstaben erlaubt</system:String>
+    <!--#endregion-->
+
+    <!--#region Menue-->
+    <system:String x:Key="menue_home">Start</system:String>
+    <system:String x:Key="menue_project">Projekt</system:String>
+    <system:String x:Key="menue_calendar">Kalender</system:String>
+    <system:String x:Key="menue_account">Konto</system:String>
+    <system:String x:Key="menue_help">Hilfe</system:String>
+    <system:String x:Key="menue_logout">Abmelden</system:String>
+    <!--#endregion-->
+</ResourceDictionary>

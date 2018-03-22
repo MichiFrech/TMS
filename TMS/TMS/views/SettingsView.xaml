@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="TMS.views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TMS.views"
+             xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="788.4" d:DesignWidth="601.6">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="115"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Task:" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,15,15,15" Grid.Column="0" />
+            <TextBox x:Name="tb_name" x:FieldModifier="public" Width="Auto" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,15,15,15" Grid.Column="1"/>
+
+            <Label Content="Deadline:" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,60,15,15" Grid.Column="0" />
+            <Controls:DateTimePicker SourceMinutes="{x:Static Controls:TimePickerBase.IntervalOf5}" x:Name="dp_deadline" Margin="0,60,15,15" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Column="1" Width="Auto"/>
+
+            <Label Content="Members:" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,105,15,15" Grid.Column="0" />
+            <ListView x:Name="listView" HorizontalAlignment="Stretch" SelectionChanged="listView_SelectionChanged" Controls:TextBoxHelper.Watermark="Select Task Members..."
+                      SelectionMode="Multiple" Margin="0,105,15,15" VerticalAlignment="Top" BorderThickness="1" Grid.Column="1" Height="160" BorderBrush="White"/>
+
+            <Label Content="Description:" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,285,15,15" Grid.Column="0" />
+            <RichTextBox x:Name="tb_desc" Grid.Column="1" Height="160" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,285,15,15" />
+
+            <Label Content="Repetition:" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,465,15,15" Grid.Column="0" />
+            <ComboBox x:Name="task_repetition" HorizontalAlignment="Stretch" Grid.Column="1" SelectionChanged="task_repetition_SelectionChanged" VerticalAlignment="Top" Margin="0,465,15,0" >
+                <ComboBoxItem Content="None" />
+                <ComboBoxItem Content="Every Day" />
+                <ComboBoxItem Content="Every 7 days" />
+                <ComboBoxItem Content="Every 30 days" />
+                <ComboBoxItem Content="Specific days" />
+            </ComboBox>
+            <Calendar x:Name="calendar" IsEnabled="False" SelectionMode="MultipleRange" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,495,15,15" />
+
+        </Grid>
+    </ScrollViewer>
+
+</UserControl>

@@ -1,0 +1,50 @@
+﻿<Controls:MetroWindow x:Class="TMS.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:TMS"
+        mc:Ignorable="d"
+        Title="Task Management Software" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="0.5" 
+        Height="342.302" Width="484" ResizeMode="NoResize" Closed="MetroWindow_Closed" WindowStartupLocation="CenterScreen" Icon="_images/projects-folder.ico">
+
+    <Grid>
+        <Label x:Name="lbl_firstname" FontSize="15" Content="{DynamicResource firstname}" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="21,12,0,0" VerticalAlignment="Top" Height="46" Width="100"/>
+        <TextBox x:Name="tb_firstname" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="29" FontSize="15" Margin="123,15,0,0" VerticalAlignment="Top" Width="310" LostFocus="Lostfocus" KeyDown="KeyDown" />
+        <iconPacks:PackIconMaterial Kind="None" x:Name="firstname_state_icon" ToolTip="{DynamicResource name_tooltip}" Margin="0,14,12,0" Height="29" Width="29"  HorizontalAlignment="Right" VerticalAlignment="Top" Focusable="False"/>
+
+        <Label x:Name="lbl_lastname" FontSize="15" Content="{DynamicResource lastname}" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="21,56,0,0" VerticalAlignment="Top" Height="46" Width="100"/>
+        <TextBox Name="tb_lastname" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="29" FontSize="15" Margin="123,59,0,0" VerticalAlignment="Top" Width="310" LostFocus="Lostfocus" KeyDown="KeyDown" />
+        <iconPacks:PackIconMaterial Kind="None" x:Name="lastname_state_icon" ToolTip="{DynamicResource name_tooltip}" Margin="0,58,12,0" Height="29" Width="29"  HorizontalAlignment="Right" VerticalAlignment="Top" Focusable="False"/>
+
+        <Label x:Name="lbl_mail" FontSize="15" Content="{DynamicResource mail}" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="21,100,0,0" VerticalAlignment="Top" Height="46" Width="100"/>
+        <TextBox x:Name="tb_mail" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="29" FontSize="15" Margin="123,103,0,0" VerticalAlignment="Top" Width="310" LostFocus="Lostfocus" KeyDown="KeyDown" />
+        <iconPacks:PackIconMaterial Kind="None" x:Name="mail_state_icon" ToolTip="{DynamicResource mail_tooltip}" Margin="0,102,12,0" Height="29" Width="29"  HorizontalAlignment="Right" VerticalAlignment="Top" Focusable="False"/>
+
+        <Label x:Name="lbl_mail_Copy" FontSize="15" Content="{DynamicResource password}" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="21,144,0,0" VerticalAlignment="Top" Height="46" Width="100"/>
+        <PasswordBox x:Name="tb_pw" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="29" FontSize="15" Margin="123,147,0,0" VerticalAlignment="Top" Width="310" LostFocus="Lostfocus" KeyDown="KeyDown" />
+        <iconPacks:PackIconMaterial Kind="None" x:Name="password_state_icon" ToolTip="{DynamicResource psw_tooltip}" Margin="0,148,12,0" Height="29" Width="29"  HorizontalAlignment="Right" VerticalAlignment="Top" Focusable="False"/>
+
+        <Label FontSize="15" Content="{DynamicResource usage}" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="21,186,0,0" VerticalAlignment="Top" Height="46" Width="100"/>
+        <RadioButton x:Name="rb_pu" IsChecked="True" Focusable="False" Content="{DynamicResource usage_private}"  HorizontalAlignment="Left" Margin="123,201,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rb_bu" IsChecked="False" Focusable="False" Content="{DynamicResource usage_business}" HorizontalAlignment="Left" Margin="123,237,0,0" VerticalAlignment="Top"/>
+
+        <Button Controls:ControlsHelper.ContentCharacterCasing="Normal" x:Name="btn_register" Content="{DynamicResource register}" 
+                Style="{DynamicResource SquareButtonStyle}" Focusable="False" HorizontalAlignment="Left" Margin="335,271,0,0" 
+                VerticalAlignment="Top" Width="98" Height="30" Click="btn_register_Click" BorderThickness="1"/>
+        <Controls:ProgressRing x:Name="progring" IsActive="False" Margin="437,271,9.8,11" Height="30" Width="30" />
+        <Label x:Name="lbl_msg" HorizontalAlignment="Left" Margin="18,274,0,0" 
+               VerticalAlignment="Top" Height="27" Width="335" FontWeight="Bold"/>
+        
+    </Grid>
+
+    <Controls:MetroWindow.LeftWindowCommands>
+        <Controls:WindowCommands>
+            <Button x:Name="gobackbtn" Focusable="False" Click="gobackbtn_Click">
+                <iconPacks:PackIconMaterial Kind="ArrowLeftBoldHexagonOutline" />
+            </Button>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.LeftWindowCommands>
+</Controls:MetroWindow>

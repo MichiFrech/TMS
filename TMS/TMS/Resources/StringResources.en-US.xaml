@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:TMS.Resources"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <!--#region Login/Register-->
+    <system:String x:Key="welcomeTxt">Welcome to the Task Management Software...</system:String>
+    <system:String x:Key="register">REGISTER</system:String>
+    <system:String x:Key="login">LOGIN</system:String>
+    <system:String x:Key="password">Password:</system:String>
+    <system:String x:Key="msg_err">"An error has occurred!"</system:String>
+    <system:String x:Key="msg_succ">Successfully registered!</system:String>
+    <system:String x:Key="psw_tooltip">At least one upper case letter • At least one lower case letter • At least one digit • Minimum 8 in length</system:String>
+    <system:String x:Key="mail_tooltip">The email address must be in the format name@mail.com</system:String>
+    <system:String x:Key="mail">Email:</system:String>
+    <system:String x:Key="firstname">First-Name:</system:String>
+    <system:String x:Key="lastname">Last-Name:</system:String>
+    <system:String x:Key="usage">Usage:</system:String>
+    <system:String x:Key="usage_private">Private use [free]</system:String>
+    <system:String x:Key="usage_business">Business use [50$ per year]</system:String>
+    <system:String x:Key="name_tooltip">Only Letters are allowed</system:String>
+    <!--#endregion-->
+    
+    <!--#region Menue-->
+    <system:String x:Key="menue_home">Home</system:String>
+    <system:String x:Key="menue_project">Project</system:String>
+    <system:String x:Key="menue_calendar">Calendar</system:String>
+    <system:String x:Key="menue_account">Account</system:String>
+    <system:String x:Key="menue_help">Help</system:String>
+    <system:String x:Key="menue_logout">Logout</system:String>
+    <!--#endregion-->
+</ResourceDictionary>
