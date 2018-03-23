@@ -26,7 +26,9 @@ namespace TMS.views
         public HomeView()
         {
             InitializeComponent();
-            dgrid.ItemsSource = InitializeAllTasks();
+            dgrid_today.ItemsSource = InitializeAllTasks();
+            dgrid_week.ItemsSource = InitializeAllTasks();
+            dgrid_month.ItemsSource = InitializeAllTasks();
         }
 
         public ObservableCollection<Task> InitializeAllTasks()

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TMS.views"
              mc:Ignorable="d" 
@@ -26,7 +27,7 @@
                 </Grid.ColumnDefinitions>
                 <Controls:MetroTabControl Grid.Column="0" Controls:TabControlHelper.Underlined="TabPanel">
                     <Controls:MetroTabItem Header="DUE TODAY">
-                        <DataGrid x:Name="dgrid" Grid.Column="0" Margin="5,5,0,0" HorizontalAlignment="Stretch" Grid.Row="1"
+                        <DataGrid x:Name="dgrid_today" Grid.Column="0" Margin="5,5,0,0" HorizontalAlignment="Stretch" Grid.Row="1"
                         VerticalAlignment="Stretch" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False"
                             FontSize="14" ItemsSource="{Binding AllTasks}" AutoGenerateColumns="False">
                             <DataGrid.Columns>
@@ -43,11 +44,55 @@
                             </DataGrid.Columns>
                         </DataGrid>
                     </Controls:MetroTabItem>
-                    <Controls:MetroTabItem Header="DUE THIS WEEK" />
+                    <Controls:MetroTabItem Header="DUE THIS WEEK">
+                        <DataGrid x:Name="dgrid_week" Grid.Column="0" Margin="5,5,0,0" HorizontalAlignment="Stretch" Grid.Row="1"
+                        VerticalAlignment="Stretch" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False"
+                            FontSize="14" ItemsSource="{Binding AllTasks}" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <CheckBox IsChecked="{Binding IsMarked, UpdateSourceTrigger=PropertyChanged}"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTextColumn Width="500" Binding="{Binding Name}" Header="Task" IsReadOnly="True"/>
+                                <DataGridTextColumn Width="170" Binding="{Binding Deadline}" Header="Deadline" IsReadOnly="True"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Controls:MetroTabItem>
+                    <Controls:MetroTabItem Header="DUE THIS MONTH">
+                        <DataGrid x:Name="dgrid_month" Grid.Column="0" Margin="5,5,0,0" HorizontalAlignment="Stretch" Grid.Row="1"
+                        VerticalAlignment="Stretch" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False"
+                            FontSize="14" ItemsSource="{Binding AllTasks}" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <CheckBox IsChecked="{Binding IsMarked, UpdateSourceTrigger=PropertyChanged}"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTextColumn Width="500" Binding="{Binding Name}" Header="Task" IsReadOnly="True"/>
+                                <DataGridTextColumn Width="170" Binding="{Binding Deadline}" Header="Deadline" IsReadOnly="True"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Controls:MetroTabItem>
                 </Controls:MetroTabControl>
 
 
-                <GroupBox Grid.Column="1" Header="INBOX" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+                <GroupBox Grid.Column="1" Header="INBOX" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                    <ListView VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="12,12,12,12">
+                        <ListViewItem Content="Test1" />
+                        <ListViewItem Content="Test1" />
+                        <ListViewItem Content="Test1" />
+                        <ListViewItem Content="Test1" />
+                        <ListViewItem Content="Test1" />
+                        <ListViewItem Content="Test1" />
+                    </ListView>
+                </GroupBox>
             </Grid>
 
             <Rectangle Grid.Row="1" Stroke="DarkTurquoise" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
@@ -55,5 +100,6 @@
         </Grid>
 
         <Rectangle Grid.Row="1" Fill="#FF484848" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <Button Grid.Row="1" HorizontalAlignment="Right" Style="{DynamicResource MetroCircleButtonStyle}" VerticalAlignment="Center" Width="40" Height="40" Foreground="White" ToolTip="Save" Content="{iconPacks:Entypo Kind=AddToList}"/>
     </Grid>
 </UserControl>
