@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="TMS.views.ProjectView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+             Dialog:DialogParticipation.Register="{Binding}"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:local="clr-namespace:TMS.views"
+             xmlns:apex="clr-namespace:Apex.Controls;assembly=Apex"
+             mc:Ignorable="d" 
+             d:DesignHeight="1692.42" d:DesignWidth="1871.8">
+
+    <apex:ApexGrid Rows="*,Auto,Auto" Columns="*,Auto" HorizontalAlignment="Stretch">
+        <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Height="50" Background="#FF484848">
+            <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" LastChildFill="False">
+
+                <DockPanel.Resources>
+                    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource MetroButtonStyle}">
+                        <Setter Property="Foreground" Value="{DynamicResource WhiteBrush}"/>
+                        <Setter Property="DockPanel.Dock" Value="RIght"/>
+                    </Style>
+                </DockPanel.Resources>
+
+                <Button Width="40" Height="40" Foreground="White" ToolTip="Delete" Content="{StaticResource DeleteFigure}" Click="Del_Click"/>
+                <Button Width="40" Height="40" Foreground="White" ToolTip="Save" Content="{StaticResource SaveFigure}"/>
+                <Button Width="40" Foreground="White" ToolTip="New" Click="Add_Click" Content="{StaticResource NewFigure}"/>
+
+                <ToggleButton Width="40" Height="40" Margin="5" VerticalAlignment="Center" DockPanel.Dock="Left"
+                                  IsChecked="{Binding FilterViewModel.IsOpen}" Style="{DynamicResource MetroToggleButtonStyle}" 
+                                  Foreground="White" ToolTip="Filter" Content="{StaticResource FilterFigure}"/>
+                <Button Width="40" Foreground="White" ToolTip="Refresh" DockPanel.Dock="Left" Content="{StaticResource RefreshFigure}"/>
+
+            </DockPanel>
+        </Border>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Rectangle Grid.Row="0" Fill="#FF484848"/>
+            <ComboBox x:Name="dropdown_allprojects" Grid.Row="0" FontSize="22" MaxDropDownHeight="201" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="270" Margin="20,20,0,20" />
+            <Label x:Name="proj_due" Grid.Row="0" Content="Due-DATE:  20.09.2018" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="300,15,0,15" FontWeight="Bold" />
+            <Controls:ToggleSwitch x:Name="notific" Grid.Row="0" Header="Notifications" VerticalAlignment="Top" HorizontalAlignment="Right" OffLabel="OFF" OnLabel="ON" Foreground="Black" Margin="0,15,160,0" />
+            <Button Content="{iconPacks:Modern Kind=UserAdd}" Style="{DynamicResource MetroCircleButtonStyle}" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Width="66" Height="66" Margin="0,15,90,15" />
+            <Button Content="{iconPacks:Material Kind=History}" Style="{DynamicResource MetroCircleButtonStyle}" Click="Button_Click" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Width="66" Height="66" Margin="0,15,15,15" />
+
+            <DataGrid x:Name="dgrid" Grid.Column="0" Margin="5,5,0,0" HorizontalAlignment="Stretch" Grid.Row="1"
+                  VerticalAlignment="Stretch" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False"
+                      FontSize="14" ItemsSource="{Binding AllTasks}" AutoGenerateColumns="False" SelectionChanged="dgrid_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsMarked, UpdateSourceTrigger=PropertyChanged}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTextColumn Width="500" Binding="{Binding Name}" Header="Task" IsReadOnly="True"/>
+                    <DataGridTextColumn Width="170" Binding="{Binding Deadline}" Header="Deadline" IsReadOnly="True"/>
+                    <DataGridTextColumn Width="340" Binding="{Binding Assignees}" Header="Assignees" IsReadOnly="True"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+        <DockPanel Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+            <GroupBox Width="420" Height="320" x:Name="gb_add" Header="Add a task!"
+                      DataContext="{Binding SelectedTransaction, NotifyOnSourceUpdated=True,Mode=OneWay}"
+                      DockPanel.Dock="Top">
+            </GroupBox>
+            <GroupBox x:Name="gb_settings" Header="Settings">
+                <ScrollViewer DockPanel.Dock="Top"  ScrollViewer.VerticalScrollBarVisibility="Auto">
+                    <TextBox Height="30" Width="170"/>
+                </ScrollViewer>
+            </GroupBox>
+        </DockPanel>
+    </apex:ApexGrid>
+</UserControl>

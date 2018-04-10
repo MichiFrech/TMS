@@ -1,0 +1,170 @@
+﻿<Controls:MetroWindow x:Class="TMS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:TMS.views"
+                      xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+                      mc:Ignorable="d"
+        Title=" Task Management Software" ResizeMode="CanResize" WindowState="Maximized" WindowStartupLocation="CenterScreen" WindowTransitionsEnabled="False" BorderBrush="Black" Icon="_images/projects-folder.ico" Loaded="MetroWindow_Loaded" >
+    <Controls:MetroWindow.Resources>
+        <DataTemplate x:Key="MenuItemTemplate" DataType="{x:Type Controls:HamburgerMenuIconItem}">
+            <Grid x:Name="RootGrid"
+                      Height="48"
+                      Background="Transparent">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="48" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <ContentControl Grid.Column="0"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Content="{Binding Icon}"
+                                    Focusable="False"
+                                    Foreground="White" />
+                <TextBlock Grid.Column="1"
+                               VerticalAlignment="Center"
+                               FontSize="16"
+                               Foreground="White"
+                               Text="{Binding Label}" />
+            </Grid>
+        </DataTemplate>
+    </Controls:MetroWindow.Resources>
+
+    <Controls:HamburgerMenu x:Name="HamburgerMenuControl"
+                        Foreground="White"
+                        PaneBackground="#FF444444"
+                        IsPaneOpen="False"
+                        ItemTemplate="{StaticResource MenuItemTemplate}"
+                        OptionsItemTemplate="{StaticResource MenuItemTemplate}"
+                        ItemClick="HamburgerMenuControl_OnItemClick"
+                        OptionsItemClick="HamburgerMenuControl_OnItemClick"
+                        DisplayMode="CompactInline">
+
+        <!--  Items  -->
+        <Controls:HamburgerMenu.ItemsSource>
+            <Controls:HamburgerMenuItemCollection>
+                <Controls:HamburgerMenuIconItem Icon="{iconPacks:Material Kind=Home}" Label="{DynamicResource menue_home}">
+                    <Controls:HamburgerMenuIconItem.Tag>
+                        <views:HomeView/>
+                    </Controls:HamburgerMenuIconItem.Tag>
+                </Controls:HamburgerMenuIconItem>
+
+                <Controls:HamburgerMenuIconItem Icon="{iconPacks:Octicons Kind=Project}" Label="{DynamicResource menue_project}">
+                    <Controls:HamburgerMenuIconItem.Tag>
+                        <views:ProjectView/>
+                    </Controls:HamburgerMenuIconItem.Tag>
+                </Controls:HamburgerMenuIconItem>
+                <Controls:HamburgerMenuIconItem Icon="{iconPacks:Material Kind=CalendarClock}" Label="{DynamicResource menue_calendar}">
+                    <Controls:HamburgerMenuIconItem.Tag>
+                        <views:CalendarView/>
+                    </Controls:HamburgerMenuIconItem.Tag>
+                </Controls:HamburgerMenuIconItem>
+                <Controls:HamburgerMenuIconItem Icon="{iconPacks:Material Kind=AccountCircle}" Label="{DynamicResource menue_account}">
+                    <Controls:HamburgerMenuIconItem.Tag>
+                        <views:AccountView/>
+                    </Controls:HamburgerMenuIconItem.Tag>
+                </Controls:HamburgerMenuIconItem>
+            </Controls:HamburgerMenuItemCollection>
+        </Controls:HamburgerMenu.ItemsSource>
+
+        <!--  Options  -->
+        <Controls:HamburgerMenu.OptionsItemsSource>
+            <Controls:HamburgerMenuItemCollection>
+                <!--<Controls:HamburgerMenuIconItem x:FieldModifier="public" x:Name="item_help" Icon="{iconPacks:Material Kind=HelpCircle}" Label="{DynamicResource menue_help}" />-->
+                <Controls:HamburgerMenuIconItem x:FieldModifier="public" x:Name="item_logout" Label="{DynamicResource menue_logout}" Icon="{iconPacks:Material Kind=Logout}" />
+            </Controls:HamburgerMenuItemCollection>
+        </Controls:HamburgerMenu.OptionsItemsSource>
+
+        <!--  Content  -->
+        <Controls:HamburgerMenu.ContentTemplate>
+            <DataTemplate DataType="{x:Type Controls:HamburgerMenuItem}">
+                <ContentControl x:Name="TheContent"
+                                        Grid.Row="1"
+                                        Content="{Binding Tag}"
+                                        Focusable="False"
+                                        Foreground="{DynamicResource BlackBrush}" />
+            </DataTemplate>
+        </Controls:HamburgerMenu.ContentTemplate>
+    </Controls:HamburgerMenu>
+
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <Button x:Name="Btn_window" Focusable="False" Click="Btn_window_Click" >
+                <iconPacks:PackIconMaterial Kind="HelpCircle"/>
+            </Button>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
+
+    <!-- History Flyout -->
+    <Controls:MetroWindow.Flyouts>
+        <Controls:FlyoutsControl>
+            <Controls:Flyout x:Name="flyout" x:FieldModifier="public" IsOpen="False" Header="Flyout" Position="Right" Width="600">
+                <Grid>
+                    <Label x:Name="lbl_proj" x:FieldModifier="public" Content="History of Project 1" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,15,15,15" />
+                    <ListView x:Name="listview" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="15,60,15,15" >
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                        <ListViewItem Content="PLATZHALTER" />
+                    </ListView>
+                </Grid>
+            </Controls:Flyout>
+        </Controls:FlyoutsControl>
+    </Controls:MetroWindow.Flyouts>
+</Controls:MetroWindow>
