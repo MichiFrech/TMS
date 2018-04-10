@@ -97,3 +97,13 @@ C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\obj\Debug\TMS.
 C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\obj\Debug\TMS.csproj.CoreCompileInputs.cache
 C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\obj\Debug\TMS.exe
 C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\obj\Debug\TMS.pdb
+C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\bin\Debug\LiveCharts.dll
+C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\bin\Debug\LiveCharts.pdb
+C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\bin\Debug\LiveCharts.xml
+C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\bin\Debug\System.Web.DataVisualization.Design.dll
+C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\bin\Debug\System.Web.DataVisualization.dll
+C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\bin\Debug\System.Windows.Forms.DataVisualization.Design.dll
+C:\Users\Michael - PC\Desktop\Schule\SYP\TMS-New\Repo\TMS\TMS\TMS\bin\Debug\System.Windows.Forms.DataVisualization.dll
