@@ -1,9 +1,10 @@
-# TMS
+# TMS - Release Notes
 Website:   http://tmsproject.somee.com </br>
-Test files: Test report, Test spec, Test protocol </br>
-System spec: --- </br>
-Project proposal: --- </br>
+Test files: Test report.pdf, Test spec.pdf, Test protocol.pdf </br>
+System spec: SystemSpecification.pdf </br>
+Project proposal: ProjectProposal.pdf </br>
+Effort estimations: Effort-Estimations.pdf </br>
 Software: TMS </br>
 Installer: --- </br>
-License: --- </br>
+License: license.md </br>
 Open Issues: No open issues
