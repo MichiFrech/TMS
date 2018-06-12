@@ -7,5 +7,5 @@
 **Effort estimations:** Effort-Estimations.pdf </br>
 **Software:** TMS </br>
 **Installer:** --- </br>
-**License:** license.md </br>
+**License:** MIT license </br>
 **Open Issues:** No open issues
