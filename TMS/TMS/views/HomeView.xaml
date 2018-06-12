@@ -1,0 +1,116 @@
+﻿<UserControl x:Class="TMS.views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             xmlns:local="clr-namespace:TMS.views"
+             mc:Ignorable="d" 
+             d:DesignHeight="1424.229" d:DesignWidth="2383.568">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Controls:MetroTabControl Grid.Column="0" Controls:TabControlHelper.Underlined="TabPanel">
+                    <Controls:MetroTabItem Header="{DynamicResource due_today}">
+                        <DataGrid x:Name="dgrid_today" Grid.Column="0" Margin="5,5,0,0" HorizontalAlignment="Stretch" Grid.Row="1"
+                        VerticalAlignment="Stretch" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False"
+                            FontSize="14" ItemsSource="{Binding AllTasksToday}" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <CheckBox IsChecked="{Binding Done, UpdateSourceTrigger=PropertyChanged}" Click="CheckBox_Click_Today"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTextColumn Width="500" Binding="{Binding Name}" Header="{DynamicResource task_grid}" IsReadOnly="True"/>
+                                <DataGridTextColumn Width="170" Binding="{Binding Deadline}" Header="{DynamicResource deadline}" IsReadOnly="True"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Controls:MetroTabItem>
+                    <Controls:MetroTabItem Header="{DynamicResource due_this_week}">
+                        <DataGrid x:Name="dgrid_week" Grid.Column="0" Margin="5,5,0,0" HorizontalAlignment="Stretch" Grid.Row="1"
+                        VerticalAlignment="Stretch" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False"
+                            FontSize="14" ItemsSource="{Binding AllTasksWeek}" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <CheckBox IsChecked="{Binding Done, UpdateSourceTrigger=PropertyChanged}" Click="CheckBox_Click_Week"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTextColumn Width="500" Binding="{Binding Name}" Header="{DynamicResource task_grid}" IsReadOnly="True"/>
+                                <DataGridTextColumn Width="170" Binding="{Binding Deadline}" Header="{DynamicResource deadline}" IsReadOnly="True"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Controls:MetroTabItem>
+                    <Controls:MetroTabItem Header="{DynamicResource due_this_month}">
+                        <DataGrid x:Name="dgrid_month" Grid.Column="0" Margin="5,5,0,0" HorizontalAlignment="Stretch" Grid.Row="1"
+                        VerticalAlignment="Stretch" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False"
+                            FontSize="14" ItemsSource="{Binding AllTasksMonth}" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <CheckBox IsChecked="{Binding Done, UpdateSourceTrigger=PropertyChanged}" Click="CheckBox_Click_Month"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTextColumn Width="500" Binding="{Binding Name}" Header="{DynamicResource task_grid}" IsReadOnly="True"/>
+                                <DataGridTextColumn Width="170" Binding="{Binding Deadline}" Header="{DynamicResource deadline}" IsReadOnly="True"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Controls:MetroTabItem>
+                </Controls:MetroTabControl>
+
+
+                <GroupBox Grid.Column="1" Header="{DynamicResource inbox}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                    <ListView x:Name="lv_inbox" ItemsSource="{Binding AllNotifications}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="12,12,12,12" SelectionChanged="ListView_SelectionChanged"/>
+                </GroupBox>
+            </Grid>
+
+            <lvc:CartesianChart Grid.Row="1" Series="{Binding SeriesCollection}" IsEnabled="True" LegendLocation="Right" >
+                <lvc:CartesianChart.AxisY>
+                    <lvc:Axis Title="{DynamicResource task_finished}" LabelFormatter="{Binding YFormatter}"></lvc:Axis>
+                </lvc:CartesianChart.AxisY>
+                <lvc:CartesianChart.AxisX>
+                    <lvc:Axis Title="" Labels="{Binding Labels}"></lvc:Axis>
+                </lvc:CartesianChart.AxisX>
+            </lvc:CartesianChart>
+
+        </Grid>
+        <Border Grid.Row="1" Height="50" Background="#FF484848">
+            <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" LastChildFill="False">
+
+                <DockPanel.Resources>
+                    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource MetroButtonStyle}">
+                        <Setter Property="Foreground" Value="{DynamicResource WhiteBrush}"/>
+                        <Setter Property="DockPanel.Dock" Value="RIght"/>
+                    </Style>
+                </DockPanel.Resources>
+                <Button Width="40" Foreground="White" ToolTip="{DynamicResource new_project_tooltip}" Content="{StaticResource NewFigure}" Click="Button_CreateProject_Click"/>
+                <Button Width="40" Foreground="White" ToolTip="{DynamicResource refresh_tooltip}" DockPanel.Dock="Left" Content="{StaticResource RefreshFigure}" Click="Button_Refresh_Click"/>
+            </DockPanel>
+        </Border>
+    </Grid>
+</UserControl>

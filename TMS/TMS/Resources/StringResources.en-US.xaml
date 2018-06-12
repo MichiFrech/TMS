@@ -1,0 +1,99 @@
+﻿<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <!--#region Login/Register-->
+    <system:String x:Key="welcomeTxt">Welcome to the Task Management Software...</system:String>
+    <system:String x:Key="register">REGISTER</system:String>
+    <system:String x:Key="login">LOGIN</system:String>
+    <system:String x:Key="password">Password:</system:String>
+    <system:String x:Key="msg_err">"An error has occurred!"</system:String>
+    <system:String x:Key="msg_succ">Successfully registered!</system:String>
+    <system:String x:Key="psw_tooltip">At least one upper case letter • At least one lower case letter • At least one digit • Minimum 8 in length</system:String>
+    <system:String x:Key="mail_tooltip">The email address must be in the format name@mail.com</system:String>
+    <system:String x:Key="mail">Email:</system:String>
+    <system:String x:Key="firstname">First-Name:</system:String>
+    <system:String x:Key="lastname">Last-Name:</system:String>
+    <system:String x:Key="usage">Usage:</system:String>
+    <system:String x:Key="usage_private">Private use [free]</system:String>
+    <system:String x:Key="usage_business">Business use [50$ per year]</system:String>
+    <system:String x:Key="name_tooltip">Only Letters are allowed</system:String>
+    <!--#endregion-->
+
+    <!--#region Menue-->
+    <system:String x:Key="menue_home">Home</system:String>
+    <system:String x:Key="menue_project">Project</system:String>
+    <system:String x:Key="menue_calendar">Calendar</system:String>
+    <system:String x:Key="menue_account">Account</system:String>
+    <system:String x:Key="menue_help">Help</system:String>
+    <system:String x:Key="menue_logout">Logout</system:String>
+    <!--#endregion-->
+
+    <system:String x:Key="due_today">DUE TODAY</system:String>
+    <system:String x:Key="due_this_week">DUE THIS WEEK</system:String>
+    <system:String x:Key="due_this_month">DUE THIS MONTH</system:String>
+    <system:String x:Key="inbox">INBOX</system:String>
+    <system:String x:Key="refresh_tooltip">Refresh</system:String>
+    <system:String x:Key="new_project_tooltip">New Project</system:String>
+    <system:String x:Key="create_project">Create a new Project</system:String>
+    <system:String x:Key="project_name_tooltip">Please type in the name of the new project</system:String>
+    <system:String x:Key="project_deadline_tooltip">Please select a project deadline</system:String>
+    <system:String x:Key="add_task_gp">ADD A TASK</system:String>
+
+    <system:String x:Key="settings_task_gp">SETTINGS</system:String>
+    <system:String x:Key="deadline">Deadline</system:String>
+    <system:String x:Key="deadline_task">Deadline:</system:String>
+    <system:String x:Key="members_task">Assignees:</system:String>
+    <system:String x:Key="description_task">Description:</system:String>
+    <system:String x:Key="delete_task_tooltip">Delete Task</system:String>
+    <system:String x:Key="save_task_tooltip">Save Task</system:String>
+    <system:String x:Key="add_task_tooltip">Add Task</system:String>
+    <system:String x:Key="filter_task_tooltip">Filter Tasks</system:String>
+    <system:String x:Key="assignees_task">Assignees</system:String>
+    <system:String x:Key="task">Task:</system:String>
+    <system:String x:Key="task_grid">Task</system:String>
+    <system:String x:Key="task_stat">Tasks</system:String>
+    <system:String x:Key="task_finished">Tasks finished</system:String>
+    <system:String x:Key="repetition_task">Repetition:</system:String>
+    <system:String x:Key="notification">Notifications</system:String>
+    <system:String x:Key="error">An error occured!</system:String>
+    <system:String x:Key="select_members">Select members...</system:String>
+
+    <system:String x:Key="history">History</system:String>
+    <system:String x:Key="history_of">History of</system:String>
+    <system:String x:Key="invite_headline">Invite a person to project!</system:String>
+    <system:String x:Key="invite_email">Please type in the email of your college!</system:String>
+    <system:String x:Key="firstname_account">Firstname:</system:String>
+    <system:String x:Key="lastname_account">Lastname:</system:String>
+    <system:String x:Key="password_account">Password:</system:String>
+    <system:String x:Key="conf_password_account">Confirm Password</system:String>
+    <system:String x:Key="description_account">Description:</system:String>
+    <system:String x:Key="business_usage_account">Business usage:</system:String>
+    <system:String x:Key="already_business_usage_account">Already business usage!</system:String>
+    <system:String x:Key="date_tooltip">Please select a date</system:String>
+
+    <system:String x:Key="license_account">License:</system:String>
+    <system:String x:Key="last_payment_account">Last payment:</system:String>
+    <system:String x:Key="save_changes_account">SAVE CHANGES</system:String>
+    <system:String x:Key="upgrade_account">UPGRADE</system:String>
+    <system:String x:Key="free_license_account">Free License</system:String>
+    <system:String x:Key="lifetime_license_account">Lifetime</system:String>
+    <system:String x:Key="bu_account">Business usage</system:String>
+    <system:String x:Key="day">DAY</system:String>
+    
+    <system:String x:Key="monday">Monday</system:String>
+    <system:String x:Key="tuesday">Tuesday</system:String>
+    <system:String x:Key="thursday">Thursday</system:String>
+    <system:String x:Key="wednesday">Wednesday</system:String>
+    <system:String x:Key="friday">Friday</system:String>
+    <system:String x:Key="saturday">Saturday</system:String>
+    <system:String x:Key="sunday">Sunday</system:String>
+
+    <system:String x:Key="filter_tasks_headline">Filter tasks</system:String>
+    <system:String x:Key="filter_name_tooltip">Please type in a name</system:String>
+    <system:String x:Key="filter_from_tooltip">Deadline from</system:String>
+    <system:String x:Key="filter_until_tooltip">Deadline to</system:String>
+    <system:String x:Key="filter_assignees_tooltip">Select assignees</system:String>
+    <system:String x:Key="filter_nomatch_header">There is no task which matches your criteria.</system:String>
+    <system:String x:Key="filter_nomatch">Please try again with different values.</system:String>
+</ResourceDictionary>
