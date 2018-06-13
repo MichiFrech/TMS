@@ -5,7 +5,7 @@
 **System spec:** SystemSpecification.pdf </br>
 **Project proposal:** ProjectProposal.pdf </br>
 **Effort estimation:** Effort-Estimation.pdf </br>
-**Software:** TMS </br>
+**Source Code:** TMS </br>
 **Installer:** TMSSetup.msi </br>
 **License:** MIT license </br>
 **Open/Known Issues:** No open/known issues </br></br>
