@@ -6,6 +6,10 @@
 **Project proposal:** ProjectProposal.pdf </br>
 **Effort estimations:** Effort-Estimations.pdf </br>
 **Software:** TMS </br>
-**Installer:** --- </br>
+**Installer:** TMSSetup.msi </br>
 **License:** MIT license </br>
-**Open Issues:** No open issues
+**Open Issues:** No open issues </br></br>
+**Feature List:**
+- ...
+- ...
+- ...
