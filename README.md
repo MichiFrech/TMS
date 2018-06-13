@@ -4,7 +4,7 @@
 **Test files:** Test report.pdf, Test spec.pdf, Test protocol.pdf </br>
 **System spec:** SystemSpecification.pdf </br>
 **Project proposal:** ProjectProposal.pdf </br>
-**Effort estimations:** Effort-Estimations.pdf </br>
+**Effort estimation:** Effort-Estimation.pdf </br>
 **Software:** TMS </br>
 **Installer:** TMSSetup.msi </br>
 **License:** MIT license </br>
