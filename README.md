@@ -8,7 +8,7 @@
 **Software:** TMS </br>
 **Installer:** TMSSetup.msi </br>
 **License:** MIT license </br>
-**Open Issues:** No open issues </br></br>
+**Open/Known Issues:** No open/known issues </br></br>
 **Feature List:**
 - ...
 - ...
