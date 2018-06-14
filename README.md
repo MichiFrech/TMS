@@ -16,7 +16,7 @@ We tested our software in a stuctured way and documented it well. All the test d
 
 ### [Manuals](https://github.com/MichiFrech/TMS/tree/master/Manuals)
 <p>
-We documentated the structure and business model of our software in detail.
+We documentated the structure and business model of our software in detail. For more information please click on the <a href="https://github.com/MichiFrech/TMS/tree/master/Manuals">link</a>.
 </p>
 
 ### [How to install our software](https://github.com/MichiFrech/TMS/raw/master/TMSSetup.msi)
