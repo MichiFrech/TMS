@@ -10,9 +10,20 @@
 **License:** MIT license </br></br>
 **Open/Known Issues:**
 - Finished-Task-Chart does not work
+- Repetition does not work
+- Print does not work (will work until final release)
 
 [//]: # (Hello)
 **Feature List:**
-- ...
-- ...
-- ...
+- Due Dates
+- Reminders
+- Filters
+- Comments
+- Private lists
+- Multiple languages
+- Sync
+- Secure
+- History
+- Calendar
+- Change themes
+- Free/Payed account
