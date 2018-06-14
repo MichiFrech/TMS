@@ -7,7 +7,7 @@
 **Effort estimation:** Effort-Estimation.pdf </br>
 **Source Code:** TMS </br>
 **Installer:** TMSSetup.msi </br>
-**License:** MIT license </br>
+**License:** MIT license </br></br>
 **Open/Known Issues:**
 - Finished-Task-Chart does not work
 
