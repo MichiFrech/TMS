@@ -13,6 +13,17 @@ task everybody knows what and until when it has to be finished. Working together
 We tested our software in a stuctured way and documented it well. All the test documentation is showed up in the "Test files" folder (linked above).
 </p>
 
+### [Manuals](https://github.com/MichiFrech/TMS/tree/master/Manuals)
+<p>
+We documentated the structure and business model of our software in detail.
+</p>
+
+### [How to install our software](https://github.com/MichiFrech/TMS/blob/master/TMSSetup.msi)
+<p>
+First of all download the TMS-Setup file, open the setup file and begin with the setup. The installer will guide you through the steps
+required to install TMS on your computer.
+</p>
+
 **Website:** [tmsproject.somee.com](http://tmsproject.somee.com/) </br>
 **Logo:** Logo.png </br>
 **Test files:** Test report.pdf, Test spec.pdf, Test protocol.pdf </br>
