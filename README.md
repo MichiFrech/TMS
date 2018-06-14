@@ -8,8 +8,7 @@ task everybody knows what and until when it has to be finished. Working together
 
 ## Structure of repository
 
-### Test files
-Report, ....
+### [Test files](https://github.com/MichiFrech/TMS/tree/master/Test-Files)
 
 **Website:** [tmsproject.somee.com](http://tmsproject.somee.com/) </br>
 **Logo:** Logo.png </br>
