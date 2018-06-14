@@ -28,7 +28,7 @@ required to install TMS on your computer.
 
 ### [Source Code](https://github.com/MichiFrech/TMS/tree/master/TMS)
 <p>
-We provided the source code of our project in the <a href="https://github.com/MichiFrech/TMS/tree/master/TMS">repository</a>. All rights and legal information is provided in the <a href="">license</a>.
+We provided the source code of our project in the <a href="https://github.com/MichiFrech/TMS/tree/master/TMS">repository</a>. All rights and legal information is provided in the <a href="https://github.com/MichiFrech/TMS/blob/master/license.md">license</a>.
 </p>
 
 ### [MIT License](https://github.com/MichiFrech/TMS/blob/master/license.md)
