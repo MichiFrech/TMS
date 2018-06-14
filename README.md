@@ -18,7 +18,7 @@ We tested our software in a stuctured way and documented it well. All the test d
 We documentated the structure and business model of our software in detail.
 </p>
 
-### [How to install our software](https://github.com/MichiFrech/TMS/blob/master/TMSSetup.msi)
+### [How to install our software](https://github.com/MichiFrech/TMS/raw/master/TMSSetup.msi)
 <p>
 First of all download the TMS-Setup file, open the setup file and begin with the setup. The installer will guide you through the steps
 required to install TMS on your computer.
