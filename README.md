@@ -1,4 +1,4 @@
-# <img src="https://github.com/MichiFrech/TMS/blob/master/Logo.png" width="50"/> TMS - Release Notes
+# <img src="https://github.com/MichiFrech/TMS/blob/master/Logo.png" width="50"/> TMS <p>(Task Management Software)</p>
 ## Our software aims
 <p>
 Make project management easier and more efficient. The application will make large pin boards in companies useless because it will make everything digital and meetings
