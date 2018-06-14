@@ -28,7 +28,36 @@ required to install TMS on your computer.
 
 ### [Source Code](https://github.com/MichiFrech/TMS/tree/master/TMS)
 <p>
-We provided the source code of our project in the <a href="https://github.com/MichiFrech/TMS/tree/master/TMS">repository</a>. All rights and legal information is provided in the <a href="https://github.com/MichiFrech/TMS#mit-license">license</a>.
+We provided the source code of our project in the <a href="https://github.com/MichiFrech/TMS/tree/master/TMS">repository</a>. All rights and legal information is provided in the <a href="">license</a>.
+</p>
+
+### [Open/Known issues](https://github.com/MichiFrech/TMS)
+<p>
+Presently we only figured out two Open/Known issues listed below.
+<ul>
+ <li>Finished-Task-Chart does not work</li>
+ <li>Repetition of a task does not work</li>
+</ul>
+</p>
+
+### [Feature list](https://github.com/MichiFrech/TMS)
+<p>
+We wanted to try to figure out all the features provided in our task management software. All our features are listed below.
+<ul>
+ <li>Due Dates</li>
+ <li>Reminders</li>
+ <li>Filters</li>
+ <li>Comments</li>
+ <li>Private/Public lists</li>
+ <li>Multiple languages</li>
+ <li>Sync</li>
+ <li>Secure</li>
+ <li>History</li>
+ <li>Calendar</li>
+ <li>Change themes</li>
+ <li>Free/Payed account</li>
+ <li>Print tasks</li>
+</ul>
 </p>
 
 ### [MIT License](https://github.com/MichiFrech/TMS/blob/master/license.md)
@@ -41,24 +70,3 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 </p>
-
-**Source Code:** TMS </br>
-**Open/Known Issues:**
-- Finished-Task-Chart does not work
-- Repetition does not work
-
-[//]: # (Hello)
-**Feature List:**
-- Due Dates
-- Reminders
-- Filters
-- Comments
-- Private lists
-- Multiple languages
-- Sync
-- Secure
-- History
-- Calendar
-- Change themes
-- Free/Payed account
-- Print tasks
