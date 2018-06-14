@@ -8,6 +8,9 @@ task everybody knows what and until when it has to be finished. Working together
 
 ## Structure of repository
 
+### Test files
+Report, ....
+
 **Website:** [tmsproject.somee.com](http://tmsproject.somee.com/) </br>
 **Logo:** Logo.png </br>
 **Test files:** Test report.pdf, Test spec.pdf, Test protocol.pdf </br>
