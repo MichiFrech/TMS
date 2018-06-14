@@ -31,7 +31,7 @@ required to install TMS on your computer.
 We provided the source code of our project in the <a href="https://github.com/MichiFrech/TMS/tree/master/TMS">repository</a>. All rights and legal information is provided in the <a href="https://github.com/MichiFrech/TMS#mit-license">license</a>.
 </p>
 
-### [Open/Known issues](https://github.com/MichiFrech/TMS)
+### [Open/Known issues](https://github.com/MichiFrech/TMS#openknown-issues)
 <p>
 Presently we only figured out two Open/Known issues listed below.
 <ul>
@@ -40,7 +40,7 @@ Presently we only figured out two Open/Known issues listed below.
 </ul>
 </p>
 
-### [Feature list](https://github.com/MichiFrech/TMS)
+### [Feature list](https://github.com/MichiFrech/TMS#feature-list)
 <p>
 We wanted to try to figure out all the features provided in our task management software. All our features are listed below.
 <ul>
