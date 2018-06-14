@@ -9,6 +9,9 @@ task everybody knows what and until when it has to be finished. Working together
 ## Structure of repository
 
 ### [Test files](https://github.com/MichiFrech/TMS/tree/master/Test-Files)
+<p>
+We tested our software in a stuctured way and documented it well. All the test documentation is showed up in the "Test files" folder (linked above).
+</p>
 
 **Website:** [tmsproject.somee.com](http://tmsproject.somee.com/) </br>
 **Logo:** Logo.png </br>
