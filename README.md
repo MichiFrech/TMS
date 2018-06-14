@@ -20,7 +20,7 @@ We documentated the structure and business model of our software in detail.
 
 ### [How to install our software](https://github.com/MichiFrech/TMS/raw/master/TMSSetup.msi)
 <p>
-First of all download the TMS-Setup file ([TMSSetup.msi](https://github.com/MichiFrech/TMS/raw/master/TMSSetup.msi) in our repository or click the download button on our [Website](http://tmsproject.somee.com/)),
+First of all download the TMS-Setup file ( [TMSSetup.msi](https://github.com/MichiFrech/TMS/raw/master/TMSSetup.msi) in our repository or click the download button on our [Website](http://tmsproject.somee.com/)),
 open the setup file and begin with the setup. The installer will guide you through the steps
 required to install TMS on your computer.
 </p>
