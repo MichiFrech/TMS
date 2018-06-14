@@ -1,4 +1,11 @@
 # <img src="https://github.com/MichiFrech/TMS/blob/master/Logo.png" width="50"/> TMS - Release Notes
+## Our software aims
+<p>
+Make project management easier and more efficient. The application will make large pin boards in companies useless because it will make everything digital and meetings
+won't be neccessary too. It doesn't matter where your are, our software provides world wide access thanks to the internet. Since the admin can ssign people to every
+task everybody knows what and until when it has to be finished. Working together was never easier!
+</p>
+
 **Website:** [tmsproject.somee.com](http://tmsproject.somee.com/) </br>
 **Logo:** Logo.png </br>
 **Test files:** Test report.pdf, Test spec.pdf, Test protocol.pdf </br>
