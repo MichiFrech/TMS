@@ -9,7 +9,7 @@
 **Installer:** TMSSetup.msi </br>
 **License:** MIT license </br>
 **Open/Known Issues:** </br>
-- Finished-Task-Chart does not work </br></br>
+- Finished-Task-Chart does not work </br>
 **Feature List:**
 - ...
 - ...
