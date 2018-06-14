@@ -8,8 +8,8 @@
 **Source Code:** TMS </br>
 **Installer:** TMSSetup.msi </br>
 **License:** MIT license </br>
-**Open/Known Issues:** </br>
-- Finished-Task-Chart does not work </br>
+**Open/Known Issues:**
+- Finished-Task-Chart does not work </br></br>
 **Feature List:**
 - ...
 - ...
