@@ -11,7 +11,6 @@
 **Open/Known Issues:**
 - Finished-Task-Chart does not work
 - Repetition does not work
-- Print does not work (will work until final release)
 
 [//]: # (Hello)
 **Feature List:**
@@ -27,3 +26,4 @@
 - Calendar
 - Change themes
 - Free/Payed account
+- Print tasks
