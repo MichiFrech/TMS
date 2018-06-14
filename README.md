@@ -1,4 +1,4 @@
-# <img src="https://github.com/MichiFrech/TMS/blob/master/Logo.png" width="350"/> TMS - Release Notes
+# <img src="https://github.com/MichiFrech/TMS/blob/master/Logo.png" width="50"/> TMS - Release Notes
 **Website:** [tmsproject.somee.com](http://tmsproject.somee.com/) </br>
 **Logo:** Logo.png </br>
 **Test files:** Test report.pdf, Test spec.pdf, Test protocol.pdf </br>
