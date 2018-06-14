@@ -1,4 +1,4 @@
-# (https://github.com/MichiFrech/TMS/blob/master/Logo.png)TMS - Release Notes
+# ![alt tag](https://github.com/MichiFrech/TMS/blob/master/Logo.png) TMS - Release Notes
 **Website:** [tmsproject.somee.com](http://tmsproject.somee.com/) </br>
 **Logo:** Logo.png </br>
 **Test files:** Test report.pdf, Test spec.pdf, Test protocol.pdf </br>
