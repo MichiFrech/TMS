@@ -31,6 +31,13 @@ required to install TMS on your computer.
 We provided the source code of our project in the <a href="https://github.com/MichiFrech/TMS/tree/master/TMS">repository</a>. All rights and legal information is provided in the <a href="https://github.com/MichiFrech/TMS#mit-license">license</a>.
 </p>
 
+### [Change Log](https://github.com/MichiFrech/TMS#change-log)
+<p>
+  <ul>
+   <li>Version 1.0.0 => initial project</li> 
+  </ul>
+</p>
+
 ### [Open/Known issues](https://github.com/MichiFrech/TMS#openknown-issues)
 <p>
 Presently we only figured out two Open/Known issues listed below.
