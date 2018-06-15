@@ -11,7 +11,7 @@ task everybody knows what and until when it has to be finished. Working together
 
 ### [Test files](https://github.com/MichiFrech/TMS/tree/master/Test-Files)
 <p>
-We tested our software in a stuctured way and documented it well. All the test documentation is showed up in the "Test files" folder (linked above).
+We tested our software in a stuctured way and documented it well. All the test documentation is showed up in the ["Test files" folder](https://github.com/MichiFrech/TMS/tree/master/Test-Files).
 </p>
 
 ### [Manuals](https://github.com/MichiFrech/TMS/tree/master/Manuals)
