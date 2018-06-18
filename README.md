@@ -1,5 +1,5 @@
 
-# <img src="https://github.com/MichiFrech/TMS/blob/master/Logo.png" width="50"/> TMS [(Task Management Software)](http://tmsproject.somee.com/)
+<h1 align="center"> <img src="https://github.com/MichiFrech/TMS/blob/master/Logo.png" width="50"/> TMS <a href="http://tmsproject.somee.com/>Task Management Software</a> </h1>
 ## Our software aims
 <p>
 Make project management easier and more efficient. The application will make large pin boards in companies useless because it will make everything digital and meetings
