@@ -15,9 +15,9 @@ task everybody knows what and until when it has to be finished. Working together
 We tested our software in a stuctured way and documented it well. All the test documentation is showed up in the <a href="https://github.com/MichiFrech/TMS/tree/master/Test-Files">"Test files" folder</a>.
 </p>
 
-### [Manuals](https://github.com/MichiFrech/TMS/tree/master/Manuals)
+### [Documents](https://github.com/MichiFrech/TMS/tree/master/Documents)
 <p>
-We documentated the structure and business model of our software in detail. For more information please click on the <a href="https://github.com/MichiFrech/TMS/tree/master/Manuals">link</a>.
+We documentated the structure and business model of our software in detail. For more information please click on the <a href="https://github.com/MichiFrech/TMS/tree/master/Documents">link</a>.
 </p>
 
 ### [How to install our software](https://github.com/MichiFrech/TMS/raw/master/TMSSetup.msi)
