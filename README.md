@@ -1,5 +1,5 @@
 
-<h1 align="center"> <img src="https://github.com/MichiFrech/TMS/blob/master/Logo.png" width="50"/> TMS <a href="http://tmsproject.somee.com/>Task Management Software</a> </h1>
+<h1 align="center"> <img src="https://github.com/MichiFrech/TMS/blob/master/Logo.png" width="50"/> TMS <a href="http://tmsproject.somee.com/">Task Management Software</a> </h1>
 
 ## Our software aims
 <p>
