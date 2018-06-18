@@ -9,6 +9,9 @@ using System.ComponentModel;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Diagnostics;
+using Microsoft.Win32;
+using System.IO;
+using System.Text;
 
 namespace TMS.views
 {
@@ -1087,6 +1090,26 @@ namespace TMS.views
                     filteredTaskList.Remove(tempList[i]);
 
                 containsSelected = true;
+            }
+        }
+
+        private void btn_print_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "CSV File|*.csv";
+            sfd.ShowDialog();
+
+            if(sfd.FileName != "")
+            {
+                List<string> file = new List<string>();
+                file.Add("Name;Description;Members");
+                for (int i = 0; i < AllTasks.Count; i++)
+                {
+                    
+                    file.Add(AllTasks[i].Name + ";" + AllTasks[i].Deadline + ";" + AllTasks[i].Assignees);
+                }
+
+                File.WriteAllLines(Path.GetFullPath(sfd.FileName), file, Encoding.Default);
             }
         }
     }

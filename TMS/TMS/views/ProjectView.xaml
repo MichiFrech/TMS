@@ -43,7 +43,8 @@
             <Rectangle Grid.Row="0" Fill="#FF484848"/>
             <ComboBox x:Name="dropdown_allprojects" Grid.Row="0" SelectionChanged="dropdown_allprojects_SelectionChanged" FontSize="22" MaxDropDownHeight="201" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="270" Margin="20,20,0,20" />
             <Label x:Name="proj_due" Grid.Row="0" Content="" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="300,15,0,15" FontWeight="Bold" />
-            <Controls:ToggleSwitch x:Name="notific" IsEnabled="False" Grid.Row="0" Header="{DynamicResource notification}" VerticalAlignment="Top" HorizontalAlignment="Right" OffLabel="OFF" OnLabel="ON" Foreground="Black" Margin="0,15,160,0" />
+            <Controls:ToggleSwitch x:Name="notific" IsEnabled="False" Grid.Row="0" Header="{DynamicResource notification}" VerticalAlignment="Top" HorizontalAlignment="Right" OffLabel="OFF" OnLabel="ON" Foreground="Black" Margin="0,15,240,0" />
+            <Button x:Name="btn_print" Content="{iconPacks:Material Kind=Printer}" IsEnabled="True" Style="{DynamicResource MetroCircleButtonStyle}" Click="btn_print_Click" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Width="66" Height="66" Margin="0,15,165,15" />
             <Button x:Name="btn_invite" Content="{iconPacks:Modern Kind=UserAdd}" IsEnabled="False" Style="{DynamicResource MetroCircleButtonStyle}" Click="Button_UserAdd_Click" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Width="66" Height="66" Margin="0,15,90,15" />
             <Button x:Name="btn_history" Content="{iconPacks:Material Kind=History}" IsEnabled="False" Style="{DynamicResource MetroCircleButtonStyle}" Click="Button_History_Click" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Width="66" Height="66" Margin="0,15,15,15" />
 
