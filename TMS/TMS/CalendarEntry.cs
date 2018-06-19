@@ -14,7 +14,7 @@ namespace TMS
         public CalendarEntry(string name, string date)
         {
             this.task_name = name;
-            this.task_date = DateTime.Parse(date);
+            this.task_date = DateTime.ParseExact(date, "dd-MM-yyyy", null);
         }
     }
 }

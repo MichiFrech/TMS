@@ -54,7 +54,7 @@ namespace TMS.views
             try
             {
                 SqlCommand command = cnn.CreateCommand();
-                command.CommandText = "select name, CONVERT(varchar, duedate, 101) from tasks where assignees like '%" + MainWindow.account.id + "%' and done = 0;";
+                command.CommandText = "select name, CONVERT(varchar, duedate, 105) from tasks where assignees like '%" + MainWindow.account.id + "%' and done = 0;";
                 SqlDataReader reader;
                 List<CalendarEntry> tempList = new List<CalendarEntry>();
 
