@@ -29,7 +29,7 @@ required to install TMS on your computer.
 
 ### [User Manual](https://github.com/MichiFrech/TMS#user-manual)
 <p>
-We created a user manual which describes in a simple way how to use TMS. You can choose between a <a href="http://tmsproject.somee.com/">manual</a> and a <a href="https://www.youtube.com/">youtube tutorial</a>.
+We created a user manual which describes in a simple way how to use TMS. You can choose between a <a href="https://github.com/MichiFrech/TMS/tree/master/User%20Manual">manual</a> and a <a href="https://www.youtube.com/">youtube tutorial</a>.
 </p>
 
 ### [Source Code](https://github.com/MichiFrech/TMS/tree/master/TMS)
