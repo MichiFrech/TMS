@@ -4,8 +4,8 @@
 ## Our software aims
 <p>
 Make project management easier and more efficient. The application will make large pin boards in companies useless because it will make everything digital and meetings
-won't be neccessary too. It doesn't matter where your are, our software provides world wide access thanks to the internet. Since the admin can ssign people to every
-task everybody knows what and until when it has to be finished. Working together was never easier!
+won't be neccessary too. It doesn't matter where your are, our software provides world wide access thanks to the internet. Since the admin can assign people to every
+task everybody knows what and until when it has to be finished. Working together was never easier thanks to TMS!
 </p>
 
 ## Structure of repository
@@ -15,9 +15,9 @@ task everybody knows what and until when it has to be finished. Working together
 We tested our software in a stuctured way and documented it well. All the test documentation is showed up in the <a href="https://github.com/MichiFrech/TMS/tree/master/Test-Files">"Test files" folder</a>.
 </p>
 
-### [Manuals](https://github.com/MichiFrech/TMS/tree/master/Manuals)
+### [Documents](https://github.com/MichiFrech/TMS/tree/master/Documents)
 <p>
-We documentated the structure and business model of our software in detail. For more information please click on the <a href="https://github.com/MichiFrech/TMS/tree/master/Manuals">link</a>.
+We documentated the structure and business model of our software in detail. For more information please click on the <a href="https://github.com/MichiFrech/TMS/tree/master/Documents">link</a>.
 </p>
 
 ### [How to install our software](https://github.com/MichiFrech/TMS/raw/master/TMSSetup.msi)
@@ -30,6 +30,16 @@ required to install TMS on your computer.
 ### [Source Code](https://github.com/MichiFrech/TMS/tree/master/TMS)
 <p>
 We provided the source code of our project in the <a href="https://github.com/MichiFrech/TMS/tree/master/TMS">repository</a>. All rights and legal information is provided in the <a href="https://github.com/MichiFrech/TMS#mit-license">license</a>.
+</p>
+
+### [Developers](https://github.com/MichiFrech/TMS#developers)
+<p>
+<ul>
+  <li>Michael Frech</li>
+  <li>Nenad Tripić</li>
+</ul>
+</br>
+  School: <a href="https://www.htl-leonding.at/">HTL Leonding</a>
 </p>
 
 ### [Change Log](https://github.com/MichiFrech/TMS#change-log)
