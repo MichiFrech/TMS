@@ -2,6 +2,10 @@
 
 ## Register
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/Register.PNG"></img>
+<ul>
+  <li>1. Step: ....</li>
+  <li>2. Step: ....</li>
+</ul>
 
 ## Login
 
