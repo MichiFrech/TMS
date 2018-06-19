@@ -4,8 +4,8 @@
 ## Our software aims
 <p>
 Make project management easier and more efficient. The application will make large pin boards in companies useless because it will make everything digital and meetings
-won't be neccessary too. It doesn't matter where your are, our software provides world wide access thanks to the internet. Since the admin can ssign people to every
-task everybody knows what and until when it has to be finished. Working together was never easier!
+won't be neccessary too. It doesn't matter where your are, our software provides world wide access thanks to the internet. Since the admin can assign people to every
+task everybody knows what and until when it has to be finished. Working together was never easier thanks to TMS!
 </p>
 
 ## Structure of repository
