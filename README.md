@@ -27,7 +27,7 @@ open the setup file and begin with the setup. The installer will guide you throu
 required to install TMS on your computer.
 </p>
 
-### [User Manual](https://github.com/MichiFrech/TMS#user-manual)
+### [User Manual](https://github.com/MichiFrech/TMS/tree/master/User%20Manual)
 <p>
 We created a user manual which describes in a simple way how to use TMS. You can choose between a <a href="https://github.com/MichiFrech/TMS/tree/master/User%20Manual">manual</a> and a <a href="https://www.youtube.com/">youtube tutorial</a>.
 </p>
