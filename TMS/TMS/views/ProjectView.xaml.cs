@@ -714,12 +714,12 @@ namespace TMS.views
             if(dropdown_allprojects.SelectedIndex == -1)
             {
                 currentid = allProjects[0].proj_id;
-                proj_due.Content = "Deadline:   " + allProjects[0].proj_duedate.ToString("dd-MM-yyyy");
+                proj_due.Content = (string)FindResource("deadline_task") + "   " + allProjects[0].proj_duedate.ToString("dd-MM-yyyy");
             }
             else
             {
                 currentid = allProjects[dropdown_allprojects.SelectedIndex].proj_id;
-                proj_due.Content = "Deadline:   " + allProjects[dropdown_allprojects.SelectedIndex].proj_duedate.ToString("dd-MM-yyyy");
+                proj_due.Content = (string)FindResource("deadline_task") + "   " + allProjects[dropdown_allprojects.SelectedIndex].proj_duedate.ToString("dd-MM-yyyy");
             }
 
             if(! worker_tasks.IsBusy)
