@@ -32,6 +32,16 @@ required to install TMS on your computer.
 We provided the source code of our project in the <a href="https://github.com/MichiFrech/TMS/tree/master/TMS">repository</a>. All rights and legal information is provided in the <a href="https://github.com/MichiFrech/TMS#mit-license">license</a>.
 </p>
 
+### [Developers](https://github.com/MichiFrech/TMS#developers)
+<p>
+<ul>
+  <li>Michael Frech</li>
+  <li>Nenad Tripić</li>
+</ul>
+</br>
+  School: <a href="https://www.htl-leonding.at/">HTL Leonding</a>
+</p>
+
 ### [Change Log](https://github.com/MichiFrech/TMS#change-log)
 <p>
   <ul>
