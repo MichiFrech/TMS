@@ -522,12 +522,14 @@ namespace TMS.views
                 btn_del.IsEnabled = true;
                 btn_filter.IsEnabled = true;
                 btn_refresh.IsEnabled = true;
+
+                if (allProjects[dropdown_allprojects.SelectedIndex].proj_owner == MainWindow.account.id)
+                    btn_history.IsEnabled = true;
+                else
+                    btn_history.IsEnabled = false;
             }
 
-            if (allProjects[dropdown_allprojects.SelectedIndex].proj_owner == MainWindow.account.id)
-                btn_history.IsEnabled = true;
-            else
-                btn_history.IsEnabled = false;
+            
         }
 
         private void Worker_DoWork(object sender, DoWorkEventArgs e)
