@@ -6,15 +6,10 @@ After each headline you will see a short list of steps which guid you through th
 
 ## Register
 <ol>
-  <li>Step: Type in each field your account details (name, email, ...)</li>
+  <bold><li>Step: Type in each field your account details (name, email, ...)</li></bold>
   <li>Step: Click on "register"</li>
 </ol>
 <div>
-<ol style="font-weight: bold;">
-  <li><span style="font-weight: normal;">Text</span></li>
-  <li><span style="font-weight: normal;">More text</span></li>
-</ol>
-</div>
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/Register.PNG"></img>
 
 ## Login
