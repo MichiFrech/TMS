@@ -38,7 +38,9 @@ After each headline you will see a short list of steps which guid you through th
   <li>Step: Click on "OK"</li>
 </ol>
 </b>
+<div align="center">
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/CreateProject.PNG"></img>
+</div>
 
 ## Add a task
 <b>
@@ -47,7 +49,9 @@ After each headline you will see a short list of steps which guid you through th
   <li>Step: Click on "Add task"</li>
 </ol>
 </b>
+<div align="center">
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/AddTask.PNG"></img>
+</div>
 
 ## Change task settings
 <b>
@@ -57,7 +61,9 @@ After each headline you will see a short list of steps which guid you through th
   <li>Step: Click on "Save task"</li>
 </ol>
 </b>
+<div align="center">
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/SettingsTask.PNG"></img>
+</div>
 
 ## Delete task
 <b>
