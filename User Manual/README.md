@@ -14,7 +14,9 @@ After each headline you will see a short list of steps which guid you through th
   <li>Step: Click on "Register"</li>
 </ol>
 </b>
-<img align="center" src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/Register.PNG"></img>
+<div align="center">
+<img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/Register.PNG"></img>
+</div>
 
 ## Login
 <b>
@@ -23,7 +25,9 @@ After each headline you will see a short list of steps which guid you through th
   <li>Step: Click on "Login"</li>
 </ol>
 </b>
-<img align="center" src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/Login.PNG"></img>
+<div align="center">
+<img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/Login.PNG"></img>
+</div>
 
 ## Create project
 <b>
