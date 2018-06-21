@@ -77,7 +77,7 @@ After each headline you will see a short list of steps which guid you through th
   <li>Step: </li>
 </ol>
 </b>
-<img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/PrintTask.PNG"></img
+<img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/PrintTask.PNG"></img>
 
 ## Show project history
 <b>
