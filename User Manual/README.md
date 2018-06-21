@@ -6,7 +6,7 @@ After each headline you will see a short list of steps which guid you through th
 <div align="center">
   <a href="https://www.youtube.com/watch?v=C0DPdy98e4c" 
      target="_blank"><img src="http://img.youtube.com/vi/C0DPdy98e4c/0.jpg" 
-     alt="Not available yet!" width="240" height="180" border="10" /></a>
+     alt="Not available yet!"/></a>
 </div>
 
 ## Register
