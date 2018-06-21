@@ -6,7 +6,7 @@ After each headline you will see a short list of steps which guid you through th
 
 ## Register
 <ol>
-  <b><li>Step: <span style="font-weight: bold">Type in each field your account details (name, email, ...)</span></li></b>
+  <b><li></b>Step: <span style="font-weight: bold">Type in each field your account details (name, email, ...)</span></li>
   <li>Step: Click on "register"</li>
 </ol>
 <div>
