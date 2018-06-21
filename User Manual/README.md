@@ -1,11 +1,11 @@
 # User Manual
 <p>
-The folowing steps shows you how to use TMS. If you are more of the audio visual type we have prepared a <a href="https://www.youtube.com/watch?v=C0DPdy98e4c">youtube tutorial</a> which also shows you how to use TMS.</br>
+The folowing steps shows you how to use TMS. If you are more of the audio visual type we have prepared a <a href="https://youtu.be/Nuc0YozRH24">youtube tutorial</a> which also shows you how to use TMS.</br>
 After each headline you will see a short list of steps which guid you through the specific process. Among the lists you will find screenshots where the respective steps are marked.
 </p>
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=C0DPdy98e4c" target="_blank">
-      <img src="http://img.youtube.com/vi/C0DPdy98e4c/0.jpg" alt="Not available yet!"/>
+  <a href="https://youtu.be/Nuc0YozRH24" target="_blank">
+      <img src="http://img.youtube.com/vi/Nuc0YozRH24" alt="Not available yet!"/>
   </a>
 </div>
 
