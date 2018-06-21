@@ -4,7 +4,7 @@ The folowing steps shows you how to use TMS. If you are more of the audio visual
 After each headline you will see a short list of steps which guid you through the specific process. Among the lists you will find screenshots where the respective steps are marked.
 </p>
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=C0DPdy98e4c"><img src="https://img.youtube.com/vi/C0DPdy98e4c/0.jpg" alt="IMAGE ALT TEXT"></a>
+  <iframe width="420" height="315" src="http://www.youtube.com/embed/C0DPdy98e4c" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ## Register
