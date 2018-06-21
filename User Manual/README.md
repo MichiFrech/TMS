@@ -72,7 +72,9 @@ After each headline you will see a short list of steps which guid you through th
   <li>Step: Click on "Delete task"</li>
 </ol>
 </b>
+<div align="center">
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/DeleteTask.PNG"></img>
+</div>
 
 ## Complete task
 <b>
@@ -80,7 +82,9 @@ After each headline you will see a short list of steps which guid you through th
   <li>Step: Click on checkbox from the corresponding task</li>
 </ol>
 </b>
+<div align="center">
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/CompleteTask.PNG"></img>
+</div>
 
 ## Print tasks
 <b>
@@ -90,7 +94,9 @@ After each headline you will see a short list of steps which guid you through th
   <li>Step: Click on "Save"</li>
 </ol>
 </b>
+<div align="center">
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/PrintTask.PNG"></img>
+</div>
 
 ## Show project history
 <b>
@@ -98,7 +104,9 @@ After each headline you will see a short list of steps which guid you through th
   <li>Step: Click on "History"</li>
 </ol>
 </b>
+<div align="center">
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/ShowHistory.PNG"></img>
+</div>
 
 ## Invite new project member
 <b>
@@ -108,8 +116,10 @@ After each headline you will see a short list of steps which guid you through th
   <li>Step: Click on "OK"</li>
 </ol>
 </b>
+<div align="center">
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/Invite1.PNG"></img>
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/Invite2.PNG"></img>
+</div>
 
 ## Change language
 <b>
@@ -117,4 +127,6 @@ After each headline you will see a short list of steps which guid you through th
   <li>Step: Click on the dropdownlist and select any language</li>
 </ol>
 </b>
+<div align="center">
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/ChangeLang.PNG"></img>
+</div>
