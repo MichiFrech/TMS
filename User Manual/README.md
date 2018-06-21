@@ -1,12 +1,12 @@
 # User Manual
 <p>
 The folowing steps shows you how to use TMS. If you are more of the audio visual type we have prepared a <a href="https://www.youtube.com/">youtube tutorial</a> which also shows you how to use TMS.</br>
-After each headline you will see a short list of steps <b>which guid you through</b> the specific process. Among the lists you will find screenshots where the respective steps are marked.
+After each headline you will see a short list of steps which guid you through the specific process. Among the lists you will find screenshots where the respective steps are marked.
 </p>
 
 ## Register
 <ol>
-  <li>Step: Type in each field your account details (name, email, ...)</li>
+  <b><li>Step: Type in each field your account details (name, email, ...)</li></b>
   <li>Step: Click on "register"</li>
 </ol>
 <div>
