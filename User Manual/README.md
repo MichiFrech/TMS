@@ -65,6 +65,18 @@ After each headline you will see a short list of steps which guid you through th
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/SettingsTask.PNG"></img>
 </div>
 
+## Filter tasks
+<b>
+<ol>
+  <li>Step: Click on "Filter tasks"</li>
+  <li>Step: Type in any filter criteria (e.g. name, deadline)</li>
+  <li>Step: Click on "OK"</li>
+</ol>
+</b>
+<div align="center">
+<img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/FilterTasks.PNG"></img>
+</div>
+
 ## Delete task
 <b>
 <ol>
