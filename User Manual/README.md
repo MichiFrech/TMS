@@ -133,6 +133,17 @@ After each headline you will see a short list of steps which guid you through th
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/Invite2.PNG"></img>
 </div>
 
+## Invite new project member
+<b>
+<ol>
+  <li>Step: Type in any changes</li>
+  <li>Step: Click on "SAVE CHANGES"</li>
+</ol>
+</b>
+<div align="center">
+<img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/ChangeAccountSettings.PNG"></img>
+</div>
+
 ## Change language
 <b>
 <ol>
