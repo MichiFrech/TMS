@@ -54,6 +54,14 @@ We provided the source code of our project in the <a href="https://github.com/Mi
   </ul>
 </p>
 
+### [System requirements](https://github.com/MichiFrech/TMS#system-requirements)
+<p>
+  <ul>
+    <li>Windows as OS on your computer</li>
+    <li>A stable network connection</li>
+  </ul>
+</p>
+
 ### [Open/Known issues](https://github.com/MichiFrech/TMS#openknown-issues)
 <p>
 Presently we only figured out two Open/Known issues listed below.
