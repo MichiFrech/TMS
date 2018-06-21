@@ -5,14 +5,18 @@ After each headline you will see a short list of steps which guid you through th
 </p>
 
 ## Register
-<ul>
-  <li>1. Step: Type in each field your account details (Name, email, ...)</li>
-  <li>2. Step: Click on "register"</li>
-</ul>
+<ol>
+  <li>Step: Type in each field your account details (name, email, ...)</li>
+  <li>Step: Click on "register"</li>
+</ol>
 <img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/Register.PNG"></img>
 
 ## Login
-
+<ol>
+  <li>Step: Type in your email and password from your account</li>
+  <li>Step: Click on "login"</li>
+</ol>
+<img src="https://github.com/MichiFrech/TMS/blob/master/User%20Manual/Pictures/Login.PNG"></img>
 
 ## Create project
 
