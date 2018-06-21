@@ -5,7 +5,7 @@ After each headline you will see a short list of steps which guid you through th
 </p>
 <div align="center">
   <a href="https://youtu.be/Nuc0YozRH24" target="_blank">
-      <img src="http://img.youtube.com/vi/Nuc0YozRH24" alt="Not available yet!"/>
+      <img src="http://img.youtube.com/vi/Nuc0YozRH24/0.jpg" alt="Not available yet!"/>
   </a>
 </div>
 
